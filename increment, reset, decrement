@@ -1,0 +1,17 @@
+var createCounter = function(init) {
+    var count = init
+    return {
+        increment: () => {
+            count++
+            return count
+        },
+        reset: () => {
+            count = init
+            return count
+        },
+        decrement: () => {
+            count--
+            return count
+        }
+    }
+};
